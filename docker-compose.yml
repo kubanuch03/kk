@@ -1,0 +1,45 @@
+networks:
+  db_network:
+    driver: bridge
+
+services:
+  cam_tor_lane1:
+    container_name: Cam_Tor_Lane1
+    build:
+      context: ./Cam_Tor_Lane1
+      dockerfile: Dockerfile
+    volumes:
+      - ./Cam_Tor_Lane1/data:/app/data
+    networks:
+      - db_network
+
+  cam_tor_lane2:
+    container_name: Cam_Tor_Lane2
+    build:
+      context: ./Cam_Tor_Lane2
+      dockerfile: Dockerfile
+    volumes:
+      - ./Cam_Tor_Lane2/data:/app/data
+    networks:
+      - db_network
+
+  cam_tor_lane3:
+    container_name: Cam_Tor_Lane3
+    build:
+      context: ./Cam_Tor_Lane3
+      dockerfile: Dockerfile
+    volumes:
+      - ./Cam_Tor_Lane3/data:/app/data
+    networks:
+      - db_network
+
+  cam_tor_lane4:
+    container_name: Cam_Tor_Lane4
+    build:
+      context: ./Cam_Tor_Lane4
+      dockerfile: Dockerfile
+    volumes:
+      - ./Cam_Tor_Lane4/data:/app/data
+    networks:
+      - db_network
+

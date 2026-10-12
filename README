@@ -1,0 +1,9 @@
+docker network create db_network
+docker compose up --build
+
+192.168.0.12, 192.168.0.5, 8.8.8.8
+
+создан   vgk1           пароль: 89nDtqS2Rpug   группа: ИПП: Оператор ВГК
+создан   vgk2           пароль: XpFQqkcOhAs8   группа: ИПП: Оператор ВГК
+создан   exit           пароль: xqceTx09rHnNOP6BL   группа: ИПП: Оператор ВГК
+создан   nachpp         пароль: 40Sx4pJqXQtf   группа: ИПП: Начальник ПП
